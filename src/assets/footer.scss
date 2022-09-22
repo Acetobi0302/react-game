@@ -1,0 +1,371 @@
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    button:hover {
+        transform: scale(1.2);
+    }
+
+    .leftAvarts {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    
+        .mainAvart {
+            position: relative;
+        
+            .avart {
+                margin-left: 60px;
+                position: relative;
+        
+                button {
+                    background-color: #466585;
+                    box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+                    padding: 5px;
+                    line-height: 14px;
+                    border-radius: 32px;
+                    height: 48px;
+                    border: 2px solid #40adb3;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            
+            .icons {
+                position: absolute;
+        
+                button {
+                    color: white;
+                    background-color: #466585;
+                    box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+                    padding: 9px;
+                    line-height: 14px;
+                    border-radius: 32px;
+                    border: 2px solid #40adb3;
+                    font-size: 16px;
+                }
+            }
+        
+            .icon_trophy {
+                left: 9px;
+                top: 7px;
+            }
+        
+            .icon_btmlft {
+                top: -44px;
+                left: 24px;
+                
+                button {
+                    padding: 9px 10px;
+                }
+            }
+        
+            .icon_btmlft1 {
+                top: -57px;
+                left: 69px;
+
+                .actions {
+                    position: relative;
+                }
+            }
+        
+            .icon_task {
+                top: -44px;
+                left: 113px;
+            }
+        
+            .icon_circle {
+                top: 6px;
+                left: 126px;
+            }
+        }
+    
+        .shops {
+            display: flex;
+            gap: 30px;
+        
+            .icon_shping {
+                button {
+                    color: white;
+                    background-color: #866f9b;
+                    box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+                    height: 44px;
+                    width: 44px;
+                    line-height: 39px;
+                    border-radius: 32px;
+                    border: 2px solid #ccb9f0;
+                    font-size: 24px;
+                    padding-left: 8px;
+                }
+            }
+    
+            .icon_basket {
+                button {
+                    color: white;
+                    background-color: #544e7c;
+                    box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+                    height: 44px;
+                    width: 44px;
+                    line-height: 39px;
+                    border-radius: 32px;
+                    border: 2px solid #a2a9dd;
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .center {
+        background-color: #8393ca;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+
+        button {
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #104872;
+            margin-left: 5px;
+        }
+
+        p {
+            padding: 10px 10px 10px 20px;
+            margin: 0;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            border: 1px solid #104872;
+            font-weight: 500;
+            width: 580px;
+            position: relative;
+
+            button {
+                position: absolute;
+                top: 6px;
+                left: -22px;
+            }
+        }
+    }
+
+    .rightAvarts {
+        display: flex;
+        gap: 30px;
+
+        .icon_questin_sec {
+            button {
+                color: white;
+                background-color: #cc0d50;
+                box-shadow: 0 2px 0 rgb(0 0 0 / 45%), inset 0 0 0 2px hsl(0deg 0% 100% / 10%);
+                height: 44px;
+                width: 44px;
+                line-height: 39px;
+                border-radius: 32px;
+                border: 2px solid #f4849c;
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    footer {
+        gap: 10px;
+        justify-content: center;
+        width: 100%!important;
+        margin: 0px auto!important;
+
+        .leftAvarts {
+            gap: 44px;
+
+            .mainAvart {
+                .avart {
+                    margin-left: 45px;
+
+                    button {
+                        width: 36px;
+                        height: 36px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .icons {
+
+                    button {
+                        width: 29px;
+                        height: 28px;
+                        padding: 0;
+
+                        i {
+                            font-size: 12px;
+                        }
+                    }   
+                }
+
+                .icon_circle {
+                    left: 87px;
+                }
+
+                .icon_btmlft {
+                    top: -27px;
+                    left: 17px;
+                }
+
+                .icon_btmlft1 {
+                    top: -40px;
+                    left: 50px;
+
+                    .actions {
+                        height: fit-content;
+
+                        .actions_dropdown {
+                            right: -94%;
+                            top: -264px;
+
+                            h3 {
+                                padding: 7px 14px;
+                                font-size: 14px;
+                            }
+
+                            ul {
+                                min-height: fit-content;
+                                margin-bottom: 20px;
+                            
+                                li {
+                                    padding: 6px 12px;
+                                    font-size: 14px;
+
+                                    ul {
+                                        padding: 0;
+                                        margin: 0;
+                                        width: 71px;
+                                        top: -244px;
+                                        right: -72px;
+
+                                        li {
+                                            padding: 5px 10px!important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .icon_task {
+                    top: -27px;
+                    left: 81px;
+                }
+            }
+
+            .shops {
+                gap: 10px;
+
+                .icon_shping, .icon_basket {
+                    button {
+                        width: 29px;
+                        height: 28px;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .center {
+            p {
+                width: 199px!important;
+                padding: 2px 10px 2px 20px;
+
+                button {
+                    top: 0px;
+                }
+            }
+
+            button {
+                width: 28px;
+                height: 28px;
+                padding: 3px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .rightAvarts {
+            gap: 10px;
+
+            .icon_questin_sec {
+                button {
+                    width: 30px;
+                    height: 30px;
+
+                    i {
+                        font-size: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    } 
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    footer {
+        gap: 20px;
+        justify-content: space-between;
+        margin: 0px 30px;
+
+        .center {
+            p {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        gap: 20px;
+        justify-content: space-between;
+        margin: 0px 30px;
+
+        .center {
+            p {
+                width: 350px;
+            }
+        }
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    footer {
+        position: fixed;
+        bottom: 20px;
+    }
+ }

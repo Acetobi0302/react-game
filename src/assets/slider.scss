@@ -1,0 +1,206 @@
+
+
+.slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 700px;
+    background-color: rgb(69, 69, 69);
+    z-index: 99;
+    display: flex;
+    transition: all 2s;
+
+    .left-part {
+        width: 300px;
+        padding-top: 50px;
+        background-color: black;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        ul {
+            position: relative;
+            margin: auto;
+            text-align: center;
+            margin: 0px 50px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: 7px;
+                    left: 7px;
+                }
+
+                input {
+                    padding-left: 30px;
+                    background-color: rgb(36, 45, 52);
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    color: white;
+                    width: 100%;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                }
+
+                button {
+                    border: 1px solid rgb(33, 42, 48);
+                    border-radius: 5px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    color: white;
+                    cursor: pointer;
+                    background-color: #ffffff00;
+                    width: 100%;
+                }
+
+                button:hover {
+                    background-color: grey;
+                }
+            }
+        }
+
+        .plus {
+            img {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 50px;
+                bottom: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right-part {
+        width: 400px;
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .logo {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+            padding-right: 5px;
+
+            li {
+                display: flex;
+                align-items: center;
+                background-color: rgb(56, 56, 56);
+                padding: 10px;
+                position: relative;
+                height: 80px;
+                gap: 10px;
+
+                .item-card {
+                    position: relative;
+
+                    img {
+                        height: 60px;
+                    }
+
+                    span {
+                        position: absolute;
+                        right: 4px;
+                        bottom: 0px;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+
+                .content {
+                    h5 {
+                        font-size: 14px;
+                        margin: 0;
+                    }
+
+                    p {
+                        text-decoration: underline;
+                        margin: 0;
+                        color: #baa9a9;
+                    }
+
+                    .stars {
+                        display: flex;
+                        gap: 5px;
+                        margin-top: 10px;
+
+                        i {
+                            font-size: 10px;
+                        }
+
+                        .empty {
+                            color: #509b9d;
+                        }
+                    }
+                }
+
+                .info {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+        ul::-webkit-scrollbar {
+            width: 10px;
+          }
+          
+          /* Track */
+        ul::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+        }
+        
+        /* Handle */
+        ul::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ul::-webkit-scrollbar-thumb:hover {
+        background: #999; 
+        }
+    }
+}
+
+.slider-show {
+    left: 0px;
+}
+
+.slider-hidden {
+    left: -700px;
+}
